@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="Assets/CSS/style.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"
+    defer></script>
+  <script src="./Assets/JS/script.js" defer></script>
+  <title>Calculador de gorjetas</title>
+</head>
+
+<body>
+  <h1>Gorjetas <br> Vital</h1>
+  <div id="block">
+    <div class="calculador">
+      <label for="text">Conta</label>
+      <input type="text" id="conta" placeholder="0.00">
+      <br>
+      <label for="gorjeta">Gorjeta %</label>
+      <span class="buttons">
+        <button class="bt-gorjeta">5%</button>
+        <button class="bt-gorjeta">10%</button>
+        <button class="bt-gorjeta">15%</button>
+        <button class="bt-gorjeta">25%</button>
+        <button class="bt-gorjeta">50%</button>
+        <input type="text" name="gorjetaUser" id="gorjetaUser" placeholder="Outra %">
+      </span>
+      <br>
+      <label for="text">Número de Pessoas</label>
+      <input type="number" name="pessoas" id="pessoas" placeholder="0" min="1">
+    </div>
+
+    <div class="resultado">
+      <div class="flexbox">
+        <p>Gorjeta <br><span class="porPessoa">/Pessoa</span></p>
+        <p class="valorGorjeta" id="gorjeta">0.00</p>
+      </div>
+      <div class="flexbox">
+        <p>Total <br><span class="porPessoa">/Pessoa</span></p>
+        <p class="valorGorjeta" id="total">0.00</p>
+      </div>
+
+      <button id="reset">Resetar</button>
+    </div>
+  </div>
+</body>
+
+</html>

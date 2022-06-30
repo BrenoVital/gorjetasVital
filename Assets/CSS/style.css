@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #C4E4E7!important;
+}
+
+h1 {
+  color: #3B5E60;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#block {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  border-radius: 15px;
+  padding: 15px 0;
+  background-color: white;
+}
+
+.calculador {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  max-width: 45%;
+  margin: auto 10px;
+  font-size: 12px;
+  color: #4b5b5c;
+    /* border: 1px solid black; */
+}
+
+input {
+  text-align: right;
+  border: none;
+  background-color: #f3f3f3;
+  padding: 0.5rem 1rem;
+  color: #00474b;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+input:focus {
+  outline: #8bdad0;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bt-gorjeta, #gorjetaUser {
+  width: 30%;
+  margin: 10px 0
+}
+
+.bt-gorjeta {
+  padding: 0.5rem 0;
+  background-color: #00474B;
+  border: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 3px;
+}
+
+.bt-gorjeta:hover{
+  background-color: #9FE8DF;
+  color: #00474B;
+}
+
+.resultado {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  border-radius: 10px;
+  background-color: #00474b;
+  margin: 15px;
+}
+
+.flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  padding: 20px 20px;
+  color: #f5ffff;
+}
+
+.porPessoa {
+  font-size: 11px;
+  font-weight: 400;
+  color: #699395;
+}
+
+p {
+  margin: 0;
+}
+
+.valorGorjeta {
+  font-size: 28px;
+  font-weight: 700;
+  color: #26c2ad;
+  transform: translateY(-5px);
+}
+
+#reset {
+  align-items: center;
+  background-color: #26c2ad;
+  border: none;
+  border-radius: 5px;
+  padding: 0.6rem 4rem;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #00474B;
+}
+
+#reset:hover {
+  background-color: #9FE8DF;
+}
+
+#conta{
+    background-image: url('/Assets/images/icon-dollar.svg');
+    background-repeat: no-repeat;
+    background-position: 10px 7px;
+}
+
+@media (max-width: 560px){
+  #block{
+      flex-direction: column;
+}
+
+  #calculador{
+      max-width: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 1;
+      margin: auto 10px;
+      font-size: 12px;
+      color: #4b5b5c;
+    }
+
+  #resultado{
+      margin: 20px 35px;
+  }
+
+  .bt-gorjeta{
+      width: 130px;
+      margin: 10px 5px;
+  }
+
+  #gorjetaUser{
+      width: 108px;
+      max-width: 30%;
+  }
+
+  .flexbox{
+      padding: 20px 30px;
+  }
+
+}
+
+@media (max-width: 350px){
+
+  .bt-gorjeta{
+      width: 100px;
+      margin: 10px 5px;
+  }
+
+  #gorjetaUser{
+      width: 80px;
+      max-width: 30%;
+  }
+
+  .flexbox{
+      padding: 20px 15px;
+  }
+
+  #calculator{
+      /* border: 1px solid black; */
+      max-width: 100%;
+      margin: 20px 15px;
+      
+  }
+
+  #resultado{
+      /* border: 1px solid yellow; */
+      margin: 20px 15px;
+  }
+
+}
